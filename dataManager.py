@@ -93,3 +93,34 @@ def find_missing_titles(ris_path, filtered_titles_path):
 	print(f"Missing titles ({len(missing_titles)}):")
 	for title in missing_titles:
 		print(f"- {title}")
+
+def extract_titles(ris_path):
+	with open(ris_path, 'r', encoding='utf-8') as f:
+		content = f.read()
+
+	entries = content.strip().split('\nER  -')
+	titles = set()
+
+	for entry in entries:
+		match = re.search(r'^TI  - (.+)$', entry, re.MULTILINE)
+		if match:
+			titles.add(match.group(1).strip().lower())
+	return titles
+
+def compare_ris_files(ris_a_path, ris_b_path, output_dir='output'):
+	titles_a = extract_titles(ris_a_path)
+	titles_b = extract_titles(ris_b_path)
+
+	matched = sorted(titles_a & titles_b)
+	unmatched = sorted(titles_a - titles_b)
+
+	with open(f"{output_dir}/matched_titles.txt", 'w', encoding='utf-8') as f:
+		f.write('\n'.join(matched))
+
+	with open(f"{output_dir}/unmatched_titles.txt", 'w', encoding='utf-8') as f:
+		f.write('\n'.join(unmatched))
+
+	print(f"✅ Comparison Complete:")
+	print(f"  Total in File A: {len(titles_a)}")
+	print(f"  Matches in File B: {len(matched)}")
+	print(f"  Not found in File B: {len(unmatched)}")

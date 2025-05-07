@@ -11,7 +11,7 @@ max_tokens = 10000
 topic = "paper_filtering"
 input_file = "Second_Data/my_library.ris"
 output_file = "output/gpt_filtered_titles.txt"
-filtered_metadata_file = "output/gpt_filtered_metadata.ris"
+filtered_metadata_file = "output/only_gpt_filtered_papers.ris"
 
 def call_api(prompt):
 	response = client.chat.completions.create(
@@ -42,5 +42,6 @@ def main():
 
 if __name__ == "__main__":
 	# main()
-    # dataManager.extract_filtered_metadata(input_file, output_file, filtered_metadata_file")
-    dataManager.find_missing_titles(filtered_metadata_file, output_file)
+    dataManager.extract_filtered_metadata(input_file, "output/unmatched_titles.txt", filtered_metadata_file)
+    # dataManager.find_missing_titles(filtered_metadata_file, output_file)
+	# dataManager.compare_ris_files(filtered_metadata_file, "Second_Data/final_result.ris", "output")
