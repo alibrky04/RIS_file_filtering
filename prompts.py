@@ -37,3 +37,40 @@ def get_third_filter_prompt(batch_text):
         f"- Interviews with a specific person\n\n"
         f"For the following papers:\n\n{batch_text}\n\n"
         f"Return only the exact titles (one per line) of the papers that meet ALL inclusion criteria and NONE of the exclusion criteria.\n")
+
+def build_analysis_prompt(pages):
+	context = "\n\n".join(f"[Page {p['page']}]\n{p['text']}" for p in pages)
+
+	return f"""
+You are an academic assistant. You will be given a research paper split into pages. Your task is to extract specific information using **only the original text from the paper**—do not rephrase or summarize.
+
+For each field in the JSON below, follow these detailed instructions:
+
+1. **Title**: Extract the paper's title verbatim.
+
+2. **Purpose**: Find the section(s) that describe the objective, aim, or purpose of the paper. Use the original paragraph(s). Provide each with its page number.
+
+3. **Results**: This field should ONLY contain text that directly discusses the *challenges*, *risks*, or *ethical implications* of using artificial intelligence in higher education. Extract relevant statements or paragraphs and indicate their page numbers.
+
+4. **Target Population**: Identify the target audience or population studied (e.g., students, faculty, specific universities). If explicitly mentioned, quote it; if not, infer carefully from context and specify the original wording.
+
+5. **Methodology**: If a methodology is explicitly described, extract the original paragraph(s) where it is explained, and include the page number(s). If not, carefully infer the likely methodology and describe it in 1–2 lines.
+
+6. **Field of Study**: Identify the academic or application domain where AI is applied in this paper (e.g., medical education, computer science education). Use wording from the paper if possible.
+
+Use this exact JSON format and populate it fully (quotes where applicable, page numbers for Purpose, Results, and Methodology):
+
+{{
+  "ID": "<document id>",
+  "Title": "...",
+  "Purpose": [{{"page": X, "text": "..."}}],
+  "Results": [{{"page": X, "text": "..."}}],
+  "Target Population": "...",
+  "Methodology": [{{"page": X, "text": "..."}}] or "Likely methodology: ...",
+  "Field of Study": "..."
+}}
+
+Here is the content of the paper:
+
+{context}
+"""

@@ -1,4 +1,7 @@
 import re
+import fitz
+import pandas as pd
+import json
 
 def parse_ris(filepath):
 	with open(filepath, 'r', encoding='utf-8') as file:
@@ -124,3 +127,38 @@ def compare_ris_files(ris_a_path, ris_b_path, output_dir='output'):
 	print(f"  Total in File A: {len(titles_a)}")
 	print(f"  Matches in File B: {len(matched)}")
 	print(f"  Not found in File B: {len(unmatched)}")
+
+def extract_pdf_pages(pdf_path):
+	doc = fitz.open(pdf_path)
+	pages = []
+	for i, page in enumerate(doc, start=1):
+		text = page.get_text()
+		if text.strip():
+			pages.append({'page': i, 'text': text})
+	return pages
+
+def json_to_excel(json_path, excel_path):
+	with open(json_path, 'r', encoding='utf-8') as f:
+		data = json.load(f)
+
+	records = []
+	for item in data:
+		base = {
+			"ID": item.get("ID", ""),
+			"Title": item.get("Title", ""),
+			"Target Population": item.get("Target Population", ""),
+			"Field of Study": item.get("Field of Study", "")
+		}
+
+		for key in ["Purpose", "Results", "Methodology"]:
+			paragraphs = item.get(key, [])
+			if isinstance(paragraphs, list):
+				base[key] = "\n\n".join([f"[p.{p['page']}] {p['text']}" for p in paragraphs])
+			else:
+				base[key] = paragraphs or ""
+
+		records.append(base)
+
+	df = pd.DataFrame(records)
+	df.to_excel(excel_path, index=False)
+	print(f"✅ Excel saved to: {excel_path}")
