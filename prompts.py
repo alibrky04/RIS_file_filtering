@@ -42,35 +42,57 @@ def build_analysis_prompt(pages):
 	context = "\n\n".join(f"[Page {p['page']}]\n{p['text']}" for p in pages)
 
 	return f"""
-You are an academic assistant. You will be given a research paper split into pages. Your task is to extract specific information using **only the original text from the paper**—do not rephrase or summarize.
+  You are an academic assistant. You will be given a research paper split into pages. Your task is to extract specific information using **only the original text from the paper**—do not rephrase or summarize.
 
-For each field in the JSON below, follow these detailed instructions:
+  For each field in the JSON below, follow these detailed instructions:
 
-1. **Title**: Extract the paper's title verbatim.
+  1. **Title**: Extract the paper's title verbatim.
 
-2. **Purpose**: Find the section(s) that describe the objective, aim, or purpose of the paper. Use the original paragraph(s). Provide each with its page number.
+  2. **Purpose**: Find the section(s) that describe the objective, aim, or purpose of the paper. Use the original paragraph(s). Provide each with its page number.
 
-3. **Results**: This field should ONLY contain text that directly discusses the *challenges*, *risks*, or *ethical implications* of using artificial intelligence in higher education. Extract relevant statements or paragraphs and indicate their page numbers.
+  3. **Results**: This field should ONLY contain text that directly discusses the *challenges*, *risks*, or *ethical implications* of using artificial intelligence in higher education. Extract relevant statements or paragraphs and indicate their page numbers.
 
-4. **Target Population**: Identify the target audience or population studied (e.g., students, faculty, specific universities). If explicitly mentioned, quote it; if not, infer carefully from context and specify the original wording.
+  4. **Target Population**: Identify the target audience or population studied (e.g., students, faculty, specific universities). If explicitly mentioned, quote it; if not, infer carefully from context and specify the original wording.
 
-5. **Methodology**: If a methodology is explicitly described, extract the original paragraph(s) where it is explained, and include the page number(s). If not, carefully infer the likely methodology and describe it in 1–2 lines.
+  5. **Methodology**: If a methodology is explicitly described, extract the original paragraph(s) where it is explained, and include the page number(s). If not, carefully infer the likely methodology and describe it in 1–2 lines.
 
-6. **Field of Study**: Identify the academic or application domain where AI is applied in this paper (e.g., medical education, computer science education). Use wording from the paper if possible.
+  6. **Field of Study**: Identify the academic or application domain where AI is applied in this paper (e.g., medical education, computer science education). Use wording from the paper if possible.
 
-Use this exact JSON format and populate it fully (quotes where applicable, page numbers for Purpose, Results, and Methodology):
+  Use this exact JSON format and populate it fully (quotes where applicable, page numbers for Purpose, Results, and Methodology):
 
-{{
-  "ID": "<document id>",
-  "Title": "...",
-  "Purpose": [{{"page": X, "text": "..."}}],
-  "Results": [{{"page": X, "text": "..."}}],
-  "Target Population": "...",
-  "Methodology": [{{"page": X, "text": "..."}}] or "Likely methodology: ...",
-  "Field of Study": "..."
-}}
+  {{
+    "ID": "<document id>",
+    "Title": "...",
+    "Purpose": [{{"page": X, "text": "..."}}],
+    "Results": [{{"page": X, "text": "..."}}],
+    "Target Population": "...",
+    "Methodology": [{{"page": X, "text": "..."}}] or "Likely methodology: ...",
+    "Field of Study": "..."
+  }}
 
-Here is the content of the paper:
+  Here is the content of the paper:
 
-{context}
-"""
+  {context}
+  """
+
+def pdf_filter_prompt(pages):
+	context = "\n\n".join(f"[Page {p['page']}]\n{p['text']}" for p in pages)
+
+	return (
+		"You are a research paper filter. I will give you the full text of a paper, extracted from a PDF and organized by page.\n\n"
+		"Return **'YES'** only if the paper satisfies **ALL** of the following inclusion criteria:\n"
+		"- The **primary target population** is higher education students and educators (NOT experts, librarians, admin staff, or other stakeholders)\n"
+		"- The **data is collected directly** from students and educators (NOT from documents, websites, or secondary sources)\n"
+		"- The **topic** is directly related to **teaching and learning** in higher education\n"
+		"- The paper discusses **challenges, risks, or issues** of integrating AI into the teaching and learning process\n\n"
+		"Exclude the paper if it matches **ANY** of the following:\n"
+		"- Bibliometric analysis\n"
+		"- Systematic review, literature review, or scoping review\n"
+		"- Critical review\n"
+		"- Editorials\n"
+		"- Interviews with a specific individual (e.g., one professor)\n\n"
+		"Here is the paper:\n\n"
+		f"{context}\n\n"
+		"First, respond with **'YES'** or **'NO'** to indicate whether the paper meets the criteria.\n"
+		"Then, in **2 to 3 sentences**, briefly explain the reasoning behind your decision, based on the content of the paper.\n"
+	)

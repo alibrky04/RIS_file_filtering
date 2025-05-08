@@ -11,8 +11,8 @@ model = "gpt-4.1-mini-2025-04-14"
 temperature = 0.2
 max_tokens = 10000
 topic = "paper_filtering"
-input_file = "input/pdfs"
-output_file = "output/results.json"
+input_file = "input/pdf_files"
+output_file = "output/pdf_filter_results.txt"
 filtered_metadata_file = ""
 
 def call_api(prompt):
@@ -68,10 +68,42 @@ def process_all_pdfs(pdf_dir, output_path="output/results.json"):
 		json.dump(all_data, f, indent=2, ensure_ascii=False)
 	print(f"✅ All data saved to {output_path}")
 
+def filter_pdfs_with_criteria(pdf_dir, output_path="output/pdf_filter_results.txt"):
+	os.makedirs(os.path.dirname(output_path), exist_ok=True)
+	pdf_files = glob.glob(os.path.join(pdf_dir, "*.pdf"))
+
+	with open(output_path, 'a', encoding='utf-8') as f:
+		for pdf_path in pdf_files:
+			doc_id = os.path.splitext(os.path.basename(pdf_path))[0]
+			print(f"🧪 Filtering: {doc_id}")
+			pages = dataManager.extract_pdf_pages(pdf_path)
+
+			try:
+				prompt = prompts.pdf_filter_prompt(pages)
+				result = call_api(prompt)
+				lines = result.strip().splitlines()
+				decision = lines[0].strip().upper() if lines else "UNKNOWN"
+				explanation = "\n".join(lines[1:]).strip() if len(lines) > 1 else ""
+
+				if decision not in ("YES", "NO"):
+					print(f"⚠️ Unexpected response from API for {doc_id}: {result}")
+					decision = "UNKNOWN"
+			except Exception as e:
+				print(f"❌ Error filtering {doc_id}: {e}")
+				decision = "ERROR"
+				explanation = str(e)
+
+			f.write(f"{doc_id}: {decision}\n{explanation}\n\n")
+			f.flush()
+
+	print(f"✅ Filter results saved incrementally to {output_path}")
+
+
 if __name__ == "__main__":
 	# ris_filter()
-	process_all_pdfs(input_file, output_file)
-	dataManager.json_to_excel(output_file, "output/results.xlsx")
+	# process_all_pdfs(input_file, output_file)
+	filter_pdfs_with_criteria(input_file, output_file)
+	# dataManager.json_to_excel(output_file, "output/results.xlsx")
 	# dataManager.extract_filtered_metadata(input_file, output_file, filtered_metadata_file)
 	# dataManager.find_missing_titles(filtered_metadata_file, output_file)
 	# dataManager.compare_ris_files(filtered_metadata_file, "Second_Data/final_result.ris", "output")
