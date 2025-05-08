@@ -96,3 +96,35 @@ def pdf_filter_prompt(pages):
 		"First, respond with **'YES'** or **'NO'** to indicate whether the paper meets the criteria.\n"
 		"Then, in **2 to 3 sentences**, briefly explain the reasoning behind your decision, based on the content of the paper.\n"
 	)
+
+def pdf_country_prompt(pages):
+    context = "\n\n".join(f"[Page {p['page']}]\n{p['text']}" for p in pages)
+
+    return (
+        "You are a research paper filter. I will give you the full text of a paper, extracted from a PDF and organized by page.\n\n"
+        "Return the **country** where the research was conducted, based on the content of the paper, in the following JSON format:\n\n"
+        "{\n"
+        "  \"Country\": [\"Country1\", \"Country2\"]\n"
+        "}\n\n"
+        "Here is the paper:\n\n"
+        f"{context}\n\n"
+        "If the country is not explicitly mentioned, infer it from the context. If you cannot determine the country, respond with **'Unknown'**. "
+        "If multiple countries are mentioned, list them all in the 'Country' array."
+    )
+
+def json_summarize_prompt(json_data):
+	return (
+		f"""You will receive a JSON object representing a research paper.
+
+Your task is to:
+1. Summarize the **Purpose** field into **1 to 3 concise sentences**.
+2. Summarize the **Results** field into **2 to 3 informative paragraphs**.
+3. Summarize the **Methodology** field into **1 to 2 concise paragraphs**.
+4. Leave all other fields unchanged.
+5. Return the result as a valid JSON object in the same structure, but remove any page information.
+
+Here is the input JSON object:
+{json_data}
+
+Only return the transformed JSON object, and nothing else."""
+	)

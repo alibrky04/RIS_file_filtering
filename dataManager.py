@@ -2,6 +2,8 @@ import re
 import fitz
 import pandas as pd
 import json
+import rispy
+import difflib
 
 def parse_ris(filepath):
 	with open(filepath, 'r', encoding='utf-8') as file:
@@ -137,17 +139,64 @@ def extract_pdf_pages(pdf_path):
 			pages.append({'page': i, 'text': text})
 	return pages
 
-def json_to_excel(json_path, excel_path):
+
+def build_ris_metadata_map(ris_path):
+	with open(ris_path, 'r', encoding='utf-8') as f:
+		entries = rispy.load(f)
+
+	title_to_meta = {}
+
+	for entry in entries:
+		title = entry.get("title", "").strip().lower()
+		title_to_meta[title] = {
+			"Journal": entry.get("journal", entry.get("secondary_title", "")),
+			"Year": entry.get("year", ""),
+			"Affiliation": entry.get("first_authors_address", entry.get("address", ""))
+		}
+
+	return title_to_meta
+
+def find_best_ris_match(title, ris_metadata_map, cutoff=0.9):
+	title = title.strip().lower()
+	if title in ris_metadata_map:
+		return ris_metadata_map[title]
+
+	matches = difflib.get_close_matches(title, ris_metadata_map.keys(), n=1, cutoff=cutoff)
+	if matches:
+		print(f"🔍 Fuzzy match: '{title}' → '{matches[0]}'")
+		return ris_metadata_map[matches[0]]
+	else:
+		print(f"⚠️ No RIS metadata match found for title: {title}")
+		return {}
+
+def extract_country_from_target(target_pop, country_data_map):
+    countries = country_data_map.get(target_pop, [])
+    return ", ".join(countries) if countries else "Unknown"
+
+def json_to_excel(json_path, excel_path, ris_metadata_map, country_data_path):
 	with open(json_path, 'r', encoding='utf-8') as f:
 		data = json.load(f)
 
+	with open(country_data_path, 'r', encoding='utf-8') as f:
+		country_data = json.load(f)
+
+	country_data_map = {item["ID"]: item["Country"] for item in country_data}
 	records = []
+
 	for item in data:
+		title = item.get("Title", "")
+		ris_info = find_best_ris_match(title, ris_metadata_map)
+
+		country_from_data = extract_country_from_target(item.get("ID", ""), country_data_map)
+
 		base = {
 			"ID": item.get("ID", ""),
-			"Title": item.get("Title", ""),
+			"Title": title,
 			"Target Population": item.get("Target Population", ""),
-			"Field of Study": item.get("Field of Study", "")
+			"Field of Study": item.get("Field of Study", ""),
+			"Journal": ris_info.get("Journal", ""),
+			"Year": ris_info.get("Year", ""),
+			"Country": country_from_data
 		}
 
 		for key in ["Purpose", "Results", "Methodology"]:
