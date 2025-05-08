@@ -9,9 +9,9 @@ model = "gpt-4.1-mini-2025-04-14"
 temperature = 0.2
 max_tokens = 10000
 topic = "paper_filtering"
-input_file = "Second_Data/my_library.ris"
-output_file = "output/gpt_filtered_titles.txt"
-filtered_metadata_file = "output/only_gpt_filtered_papers.ris"
+input_file = "output/gpt_filtered_metadata_v2.ris"
+output_file = "output/gpt_filtered_titles_v2.txt"
+filtered_metadata_file = "output/unmatched_titles.ris"
 
 def call_api(prompt):
 	response = client.chat.completions.create(
@@ -33,7 +33,7 @@ def main():
 	for i, batch in enumerate(batches):
 		print(f"Processing batch {i+1}/{len(batches)}...")
 		batch_text = dataManager.format_batch_for_prompt(batch)
-		prompt = prompts.get_filter_prompt(batch_text)
+		prompt = prompts.get_second_filter_prompt(batch_text)
 		try:
 			result = call_api(prompt)
 			save_results(result)

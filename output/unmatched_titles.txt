@@ -1,352 +1,73 @@
-'i don't have to write an essay ever again!': university student reflections on chatgpt in the classroom
 'it's like a double-edged sword': mentor perspectives on ethics and responsibility in a learning analytics-supported virtual mentoring program
-a critical review of genai policies in higher education assessment: a call to reconsider the 'originality' of students' work
-a critical review of genai policies in higher education assessment: a call to reconsider the “originality” of students’ work
-a cross-national assessment of artificial intelligence (ai) chatbot user perceptions in collegiate physics education
-a human-centric automated essay scoring and feedback system for the development of ethical reasoning
-a needs assessment to support faculty members' awareness of generative ai technologies to support instruction
-a qualitative descriptive analysis on generative artificial intelligence: bridging the gap in pedagogy to prepare students for the workplace
 a risk framework for human-centered artificial intelligence in education: based on literature review and delphi-ahp method
-a tutorial activity for students to experience generative artificial intelligence: students' perceptions and actions
-a vulnerability analysis: theorising the impact of artificial intelligence decision-making processes on individuals, society and human diversity from a social justice perspective
-a widely used generative-ai detector yields zero false positives
-academic activities recommendation system for sustainable education in the age of covid-19
-academic communication with ai-powered language tools in higher education: from a post-humanist perspective
 academic integrity in the age of generative ai: perceptions and responses of vietnamese efl teachers
 academic integrity surrounding the use of generative ai in higher education: lenses from ict college students
-academic integrity: author-related and journal-related issues
-academic leaders' attitudes toward artificial intelligence applications in leadership work in light of the diffusion of innovation theory: the impact of possession of digital literacy
-accused: how students respond to allegations of using chatgpt on assessments
 adapting to the unsanctioned use of ai-supported technologies in student assessments
-advances and challenges of artificial intelligence in the university context: an empirical study
-ai and assessment design in engineering disciplines
 ai and ethics: ethical and educational perspectives for lis
-ai and personalised grading criteria
 ai and the future of teaching: preservice teachers' reflections on the use of artificial intelligence in open and distributed learning
-ai as designated designer: training public-speaking students to use beautiful.ai for their slide presentations
 ai chatbot adoption in academia: task fit, usefulness, and collegial ties
-ai in academic writing: tool or invader
-ai in education: pedagogical and ethical analysis of the implementation of assistments in the school environment
 ai in higher education: does not help, might hurt
-ai literacy, self-efficacy, and self-competence among college students: variances and interrelationships among variables
-ai meeting assistants in english-medium university lectures in hong kong, china: a double-edged sword for student perception
-ai recruitment algorithms and the dehumanization problem
-ai-assisted enhancement of student presentation skills: challenges and opportunities
-ai-based and mobile apps: eight studies based on post-secondary students' experiences
-ai-driven transformation in higher education: new frontiers in administration and management
-ai-generated feedback on writing: insights into efficacy and enl student preference
-alarm bells or just smoke: an evaluation of the potential for cheating with chatgpt on criminal justice student papers
 algorithmically-driven writing and academic integrity: exploring educators' practices, perceptions, and policies in ai era
-an evaluation of the managerial context for digital transformation in the context of open education in higher education
 an examination of student user experience (ux) and perceptions of remote invigilation during online assessment
-appraisal of high-stake examinations during sars-cov-2 emergency with responsible and transparent ai: evidence of fair and detrimental assessment
-are ai detection and plagiarism similarity scores worthwhile in the age of chatgpt and other generative ai?
-are university teachers ready for generative artificial intelligence? unpacking faculty anxiety in the chatgpt era
-artificial intelligence (ai) as a tool to address academic challenges in south african higher education
 artificial intelligence and academic integrity: the role of academic librarians
 artificial intelligence and learning environment: human considerations
-artificial intelligence and the technological turn of public education privatization: in defence of democratic education
-artificial intelligence for higher education: benefits and challenges for pre-service teachers
-artificial intelligence literacy among south asian library and information science students: socio-demographic influences and educational implications
-artificial intelligence use in feedback: a qualitative analysis
-artificial intelligence, academic misconduct, and the borg why gpt-3 text generation in the higher education classroom is becoming scary
-artificial intelligence: a help or threat to contemporary education. should students be forced to think and do their tasks independently?
 assessing law students in a genai world to create knowledgeable future lawyers
-assessing the effectiveness of student advice recommender agent (sara): the case of automated personalized feedback
-assessing the readiness and attitudes of nigerian teacher educators towards adoption of artificial intelligence in educational settings
-assessment of the effect of attitudes of information engineering students on academic misconduct
-assisting academics to identify computer generated writing
-at the intersection of human and algorithmic decision-making in distributed learning
-automated text detection from big data scene videos in higher education: a practical approach for moocs case study
 barriers to and opportunities for the adoption of generative artificial intelligence in higher education in the global south: insights from sri lanka
 barriers to and opportunities for the adoption of generative artificial intelligence in higher education in the global south: insights from sri lanka
-benefits and challenges of aiops adoption and usage in heis in developing countries
-between tech and text: the use of generative ai in palestinian universities – a chatgpt case study
-bias in automatic speech recognition: the case of african american language
-big data and language learning: opportunities and challenges
-bob or bot: exploring chatgpt's answers to university computer science assessment
-bridging expectations and reality: addressing the price-value paradox in teachers' ai integration
-bridging the ai gap: comparative analysis of ai integration, education, and outreach in academic libraries
-building academic integrity: evaluating the effectiveness of a new framework to address and prevent contract cheating
-can ai level the playing field? how ai-assisted assessment impacts gender bias in student evaluations of marketing instructors
-can chatgpt support prospective teachers in physics task development?
-can software improve marker accuracy at detecting contract cheating? a pilot study of the turnitin authorship investigate alpha
 challenges of implementing chatgpt on education: systematic literature review
-chapter 5: early warning indicator systems in action–considerations from identification to supports
-chatbot to improve learning punctuation in spanish and to enhance open and flexible learning environments
-chatgpt adoption and its influence on faculty well-being: an empirical research in higher education
-chatgpt and higher education assessments: more opportunities than concerns?
 chatgpt and its impact on competence training in occupational therapists: a reflection on academic integrity
-chatgpt and its role in academic libraries: a discussion
-chatgpt as a universal design for learning tool supporting college students with disabilities
-chatgpt awareness, acceptance, and adoption in higher education: the role of trust as a cornerstone
 chatgpt in education: strategies for responsible implementation
-chatgpt in higher education: considerations for academic integrity and student learning
-chatgpt in the english classroom: 18 students test it and share their insights
-chatgpt is a game changer: detection and eradication is not the way forward
-chatgpt: a tool towards an education revolution?
-chatgpt: the dilemma of the authorship of graded assignments in higher-education
-chatgpt: the sky is not falling
-cheaters or ai-enhanced learners: consequences of chatgpt for programming education
-cheating better with chatgpt: a framework for teaching students when to use chatgpt and other generative ai bots
-clarifying ethical dilemmas in using artificial intelligence in research writing: a rapid review
-college students' use and perceptions of ai tools in the uae: motivations, ethical concerns and institutional guidelines
-communicating clear guidance: advice for generative ai policy development in higher education
-computer science and non-computer science faculty members' perception on teaching data science via an experiential learning platform
-critical minds: enhancing education with chatgpt
-critical success factors and challenges for individual digital study assistants in higher education: a mixed methods analysis
-critical thinking and problem-solving in the age of chatgpt: experiential-bibliotherapy-blogging project
-delivering effective student feedback in higher education: an evaluation of the challenges and best practice
-design of blended learning mode and practice community using intelligent cloud teaching
-designing learning technology collaboratively: analysis of a chatbot co-design
-determinants of the intention to use chatgpt in the work of university lecturers
 deterrence and generative artificial intelligence use in universities
-development and validation of an instrument to measure undergraduate students' attitudes toward the ethics of artificial intelligence (at-eai) and analysis of its difference by gender and experience of ai education
-development of evidence-based guidelines for the integration of generative ai in university education through a multidisciplinary, consensus-based approach
-digital discrimination risks in the transformation of higher education
-disparities in students' propensity to consent to learning analytics
-distributed agency in second language learning and teaching through generative ai
-do in-service teachers accept artificial intelligence-driven technology? the mediating role of school support and resources
-do less teaching, do more coaching: toward critical thinking for ethical applications of artificial intelligence
-do teachers spot ai? evaluating the detectability of ai-generated texts among student essays
 do you have ai dependency? the roles of academic self-efficacy, academic stress, and performance expectations on problematic ai usage behavior
 early adopters: navigating ai integration in special education teacher preparation
-educators in transition: unpacking argentinean teachers’ attitudes towards ai in higher education
-effectiveness of embodied conversational agents for managing academic stress at an indian university (aru) during covid-19
-effects of a chatgpt-based flipped learning guiding approach on learners' courseware project performances and perceptions
-effects of higher education institutes' artificial intelligence capability on students' self-efficacy, creativity and learning performance
-effects of incorporating an expert decision-making mechanism into chatbots on students' achievement, enjoyment, and anxiety
-effects of personalized intervention on collaborative knowledge building, group performance, socially shared metacognitive regulation, and cognitive load in computer-supported collaborative learning
-efl tertiary teachers' and students' conceptualizations and challenges of using ai tools to improve writing skills in thailand and vietnam during the covid-19 pandemic
-embedded tutors: enhancing student success and academic integrity with a pedagogy of kindness in first-year university
-embracing or rejecting ai? a mixed-method study on undergraduate students' perceptions of artificial intelligence at a private university in china
-emotional patterns in a simulated virtual classroom supported with an affective recommendation system
-empowering chatgpt with guidance mechanism in blended learning: effect of self-regulated learning, higher-order thinking skills, and knowledge construction
-empowering instructors with ai: evaluating the impact of an ai-driven feedback tool in learning analytics
-engaging with biology by asking questions: investigating students' interaction and learning with an artificial intelligence-enriched textbook
-enhancing academic writing integrity: ethical implementation of generative artificial intelligence for non-traditional online students
-enhancing authentication in online distant exams: a proposed method utilizing face and voice recognition
-enhancing decision-making in higher education: exploring the integration of chatgpt and data visualization tools in data analysis
-ethical authorship and moral motivation: the key to ethical ai use
 ethical concerns for using artificial intelligence chatbots in research and publication: evidences from saudi arabia
 ethical dimensions of algorithmic literacy for college students: case studies and cross-disciplinary connections
-ethically utilizing genai tools to alleviate challenges in conventional feedback provision
-ethics of artificial intelligence, higher education, and scientific research
-evaluating students acceptance of ai chatbot to enhance virtual collaborative learning in malaysia
-evaluating the evaluators: a comparative study of ai and teacher assessments in higher education
 evaluating the impact of students' generative ai use in educational contexts
-evolving intersections: ai, disability, and academic integrity in higher education
-examining the effect of chatgpt usage on students’ academic learning and achievement: a survey-based study in ajman, uae
 examining the ethical and sustainability challenges of legal education’s ai revolution
-examining the use of chatgpt in public universities in hong kong: a case study of restricted access areas
-exploration of chatgpt in basic education: advantages, disadvantages, and its impact on school tasks
-exploring automated classification approaches to advance the assessment of collaborative problem solving skills
-exploring chatgpt usage amongst female academics and researchers in the academia
-exploring college students' risk perception and acceptance intention of facial recognition technology in china
-exploring efl university teachers' beliefs in integrating chatgpt and other large language models in language education: a study in china
-exploring graduate students’ perception and adoption of ai chatbots in zimbabwe: balancing pedagogical innovation and development of higher-order cognitive skills
-exploring instructors’ views on fine-tuned generative ai feedback in higher education
-exploring students’ and teachers’ perceptions about using chatgpt in programming education
-exploring the challenges and affordances of integrating chatgpt into language classrooms from teachers’ points of view: an ecological perspective
-exploring the impact of language models, such as chatgpt, on student learning and assessment
-exploring the implementation of artificial intelligence applications among academic libraries in taiwan
-exploring the implications of generative-ai tools in teaching and learning practices
 exploring the intersection of artificial intelligence and higher education: opportunities and challenges in the context of geomatics education
-exploring the opportunities and challenges of chatgpt in academia
-exploring the relationship of psychological factors and adoption readiness in determining university teachers' attitude on ai-based assessment systems
-exploring the use of generative ai in student-produced efl podcasts: a qualitative study
-facial recognition system to detect student emotions and cheating in distance learning
-factors affecting faculty members’ readiness to integrate artificial intelligence into their teaching practices: a study from the saudi higher education context
-factors affecting students’ willingness to use artificial intelligence in university settings
-factors affecting the adoption and use of chatgpt in higher education
 factors influencing academic staff satisfaction and continuous usage of generative artificial intelligence (genai) in higher education
-factors influencing bangladeshi english teachers' perceptions of academic policy, academic culture and knowledge related to plagiarism in higher education
-faculty perspectives on mis- and disinformation across disciplines
-first, do no harm: automated detection of abusive comments in student evaluation of teaching surveys
-first-year students ai-competence as a predictor for intended and de facto use of ai-tools for supporting learning processes in higher education
-formation of ethical competences for ai use in english foreign language teachings
-fostering academic integrity in the digital age: empowering student voices to navigate technology as a tool for classroom policies
-from 'can ai think?' to 'can ai help thinking deeper?': is use of chatgpt in higher education a tool of transformation or fraud?
-from ethics to execution: the role of academic librarians in artificial intelligence (ai) policy-making at colleges and universities
-from human grading to machine grading: automatic diagnosis of e-book text marking skills in precision education
-from novice to navigator: students' academic help-seeking behaviour, readiness, and perceived usefulness of chatgpt in learning
-from responsible robotics towards a human rights regime oriented to the challenges of robotics and artificial intelligence
-genai et al.: cocreation, authorship, ownership, academic ethics and integrity in a time of generative ai
-generative ai and the development of assignments that promote critical thinking and ethical application in counselor education
-generative ai and the public-speaking course: a critical communication pedagogy approach
-generative ai detection in higher education assessments
-generative ai in academic settings: exploring chatgpt adoption and implications
 generative ai in higher education: a global perspective of institutional adoption policies and guidelines
-generative ai in higher education: seeing chatgpt through universities' policies, resources, and guidelines
-generative ai in the australian education system: an open data set of stakeholder recommendations and emerging analysis from a public inquiry
-generative ai: is authentic qualitative research data collection possible?
-generative artificial intelligence and assessment task design: getting back to basics through the lens of the aardvarc model
 generative artificial intelligence in distance education: transformations, challenges, and impact on academic integrity and student voice
-generative artificial intelligence policy for academic literacy in south african higher education
-global catastrophic risk and the drivers of scientist attitudes towards policy
 governance and ethical frameworks for ai integration in higher education: enhancing personalized learning and legal compliance
-graduate students’ chatgpt experience and perspectives during thesis writing
 hello gpt! goodbye home examination? an exploratory study of ai chatbots impact on university teachers' assessment practices
-higher education act for ai (heat-ai): a framework to regulate the usage of ai in higher education institutions
-higher education assessment practice in the era of generative ai tools
-how chatgpt affects education landscape: effects of chatgpt on higher education accessibility and inclusivity
 how to responsibly deploy a predictive modelling dashboard for study advisors? a use case illustrating various stakeholder perspectives
-how understanding the limitations and risks of using chatgpt can contribute to willingness to use
 how universities can move forward with generative ai in teaching and learning
-human and ai collaboration in the higher education environment: opportunities and concerns
 identifying risks in the digital transformation of higher education
-impact of chatgpt on english academic writing ability and engagement of chinese efl undergraduates
-impact of digital literacy, use of ai tools and peer collaboration on ai assisted learning: perceptions of the university students
-impacts of an ai-based 'cha'bot on college students' after-class review, academic performance, self-efficacy, learning attitude, and motivation
-implementing facial recognition technology in a university setting: an organizational justice perspective
-implementing generative ai chatbots as a decision aid for enhanced values clarification exercises in online business ethics education
-incorporating ai and learning analytics to build trustworthy peer assessment systems
-incorporating artificial intelligence into athletic training education: developing case-based scenarios using chatgpt
 integrating generative ai in higher education: challenges, opportunities, and innovations in assessment practices within electrical engineering
-integrity, confidentiality, and equity: using inquiry-based labs to help students understand ai and cybersecurity
-introducing a generative ai decision tree for higher education: a synthesis of ethical considerations from published frameworks &amp; guidelines
-investigating algorithmic bias in student progress monitoring
-is it harmful or helpful? examining the causes and consequences of generative ai usage among university students
-learning for an uncertain future: artificial intelligence a challenge for pakistani education system in the era of digital transformation
-learning to work with the black box: pedagogy for a world with artificial intelligence
-lecturers' perceptions of the influence of ai on a blended learning approach in a south african higher education institution
-lecturers’ perceptions of the influence of ai on a blended learning approach in a south african higher education institution
 legal aspects of generative artificial intelligence and large language models in examinations and theses
 leveraging ai tools in finance education: exploring student perceptions, emotional reactions and educator experiences
-liability framework for cognitive computing in healthcare: standing at the crossroad
-living well with ai: virtue, education, and artificial intelligence
-mapping surveillance capitalism in south american higher education
-mediating effect of use perceptions on technology readiness and adoption of artificial intelligence in accounting
-namemo2: facilitating teacher-student interaction with theory-based design and student autonomy consideration
 navigating the dilemma: use of chatgpt in social work education
-navigating the ethical challenges of artificial intelligence in higher education: an analysis of seven global ai ethics policies
-new challenges of learning accounting with artificial intelligence: the role of innovation and trust in technology
 online assessment and artificial intelligence: beyond the false dilemma of heaven or hell
-opportunities and risks of using ai-based applications in research: the case of ukrainian universities
-paige: a generative ai-based framework for promoting assignment integrity in higher education
 pandora's can of worms: a year of generative ai in higher education
 perceived impact of generative ai on assessments: comparing educator and student perspectives in australia, cyprus, and the united states
 perception of chatgpt usage for homework assignments: students’ and professors’ perspectives
-perceptions of artificial intelligence and its impact on academic integrity among university students in peru and chile: an approach to sustainable education
-perceptions of effectiveness and ethical use of ai tools in academic writing: a study among phd scholars in india
-perceptions of high school students on ai chatbots use in english learning: benefits, concerns, and ethical consideration
-potential chatgpt use in undergraduate chemistry laboratories
-pre-service teacher education in a postplagiarism world: incorporating genai into teacher training
-predicting nursing baccalaureate program graduates using machine learning models: a quantitative research study
-predicting nursing students’ behavioral intentions to use ai: the interplay of ethical awareness, digital literacy, moral sensitivity, attitude, self-efficacy, anxiety, and social influence
-predicting student final performance using artificial neural networks in online learning environments
-progress, challenges and countermeasures of adaptive learning: a systematic review
 reconceptualizing assessment design in the age of ai: is it genuine or faux?
-redesigning tertiary educational evaluation with ai: a task-based analysis of lis students’ assessment on written tests and utilizing chatgpt at nstu
-reducing workload in short answer grading using machine learning
-reinventing assessments with chatgpt and other online tools: opportunities for genai-empowered assessment practices
-rejection or integration of ai in academia: determining the best choice through the 'opportunity cost' theoretical formula
-reminders, reflections, and relationships: insights from the design of a chatbot for college advising
 responsibility, recourse, and redress: a focus on the three r's of ai ethics
-rethinking ai: bias in speech-recognition chatbots for elt
-revisiting automated essay scoring via the gpt artificial intelligence chatbot: a mixed methods study
-rise of the machines? the evolving role of ai technologies in high-stakes assessment
 risks of ai applications used in higher education
-safeguarding the digital economy: librarians’ perspectives on data privacy and ethical use of public ai chatbots
-shove less, nudge more: stakeholders' perspective from writing classrooms
 spatial computing: creating the future of learning
-student perceptions of academic integrity: a qualitative study of understanding, consequences, and impact
-student perceptions of chatgpt use in a college essay assignment: implications for learning, grading, and trust in artificial intelligence
-student perspectives on the use of generative artificial intelligence technologies in higher education
 student self-reflection as a tool for managing genai use in large class assessment
-students' acceptance of chatgpt in higher education: an extended unified theory of acceptance and use of technology
-students' perceptions of 'ai-giarism': investigating changes in understandings of academic misconduct
-students' perceptions of using chatgpt in a physics class as a virtual tutor
 students' perceptions, attitudes and utilisation of chatgpt for academic dishonesty: multigroup analyses via pls-sem
 students' use of generative artificial intelligence for proving mathematical statements
-students’ attitudes towards ai in teaching and learning
-summative assessment with artificial intelligence: qualitative analysis and comparison of technology acceptance in student and teacher populations
-superficially plausible outputs from a black box: problematising genai tools for analysing qualitative sotl data
-surveillance work in (and) teaching technical writing with ai
-taylor, the disability disclosure virtual assistant: a case study of participatory research with disabled students
-teacher support in ai-assisted exams: an experimental study to inspect the effects on demotivation, anxiety management in exams, l2 learning experience, and academic success
-teaching and testing in the era of text-generative ai: exploring the needs of students and teachers
-teaching online with an artificial pedagogical agent as a teacher and visual avatars for self-other representation of the learners. effects on the learning performance and the perception and satisfaction of the learners with online learning: previous and new findings
-technostress and english language teaching in the age of generative ai
-the (un)knowledgeable, the (un)skilled? undertaking chat-gpt users’ benefit-risk-coping paradox in higher education focusing on an integrated, utaut and pmt
-the advantages and disadvantages of using artificial intelligence in education
-the conversational ai “chatgpt” outperforms medical students on a physiology university examination
 the critique of ai as a foundation for judicious use in higher education
 the design, implementation and pilot application of an intelligent online proctoring system for online exams
-the desire path: unleashing expectations, discussing apprehensions, and proposing a way forward for gai use in higher education
-the digital divide: addressing artificial intelligence in communication education
-the dual impact of chatgpt on learning and ethics among bachelor of science in information technology (bsit) students
-the educator's lens: understanding the impact of ai on management education
-the effects of explanations in automated essay scoring systems on student trust and motivation
 the enhancement of academic integrity through a community of practice at the north-west university, south africa
 the ethical implications of using generative chatbots in higher education
-the evolving nature of threat and violence risk assessment in college counseling centers
-the future of artificial intelligence for education in tech- nical and technological institutes
-the future of artificial intelligence in special education technology
-the impact of artificial intelligence on learner-instructor interaction in online learning
-the impact of artificial intelligence on online assessment: a preliminary review
-the impact of chatgpt on l2 writing and expected responses: voice from doctoral students
 the impact of generative ai on higher education learning and teaching: a study of educators’ perspectives
 the impact of generative artificial intelligence in higher education: a focus on ethics and academic integrity
-the impact of large language models on university students' literacy development: a dialogue with lea and street's academic literacies framework
-the implementation of chatbot-mediated immediacy for synchronous communication in an online chemistry course
-the influence of sociodemographic factors on students' attitudes toward ai-generated video content creation
 the inspire framework for transformative and inclusive education: a case study of the science faculty at a commonwealth university
-the integration of chatgpt in english for foreign language course: elevating ai writing assistant acceptance
-the invigilator app and some vuca elements it triggers in students and lecturers during online examinations: a case study of an english studies module at unisa
-the opportunities and challenges of chatgpt in education
-the paradox of self-efficacy and technological dependence: unraveling generative ai's impact on university students' task completion
-the relationship between inert thinking and chatgpt dependence: an i-pace model perspective
 the role and challenges of education for responsible al
-the role of ai agents in fostering inclusivity for heis' students with special needs against backdrops of the accreditation trend
-the role of faculty expertise and intuition in distinguishing between aigenerated text and student writing
 the role of perceived utility and ethical concerns in the adoption of ai-based data analysis tools: a multi-group structural equation model analysis among academic researchers
 the role of students' assessment literacies in navigating university assessment, genai, and academic integrity
-the student relationship management system process with intelligent conversational agent platform
 the use and detection of ai-based tools in higher education
 the use of al in education: practicalities and ethical considerations
 the use of chatgpt in academic writing: a blessing or a curse in disguise?
-the use of chatgpt in source-based writing tasks
-the use of generative ai tools in higher education: ethical and pedagogical principles
 the use of large language model tools such as chatgpt in academic writing in english medium education postgraduate programs: a grounded theory approach
-thinking critically about scientific information generated by chatgpt
-time to revisit existing student's performance evaluation approach in higher education sector in a new era of chatgpt - a case study
 time to revisit existing student's performance evaluation approach in higher education sector in a new era of chatgpt – a case study
-to be with artificial intelligence in oral test or not to be: a probe into the traces of success in speaking skill, psychological well-being, autonomy, and academic buoyancy
-tools or fools: are we educating managers or creating tool-dependent robots?
-toward building a fair peer recommender to support help-seeking in online learning
 toward thoughtful integration of ai in education: mitigating uncritical positivity and dependence on chatgpt via classroom discussions
-towards a physiological computing infrastructure for researching students' flow in remote learning: preliminary results from a field study
 towards education 4.0: the role of large language models as virtual tutors in chemical engineering
-towards informed policy decisions: assessing student perceptions and intentions to use chatgpt for academic performance in higher education
-twenty reasons why: investigating use-related beliefs and reasons of preservice teachers for (not) using an intent-based chatbot during lesson planning
 ukrainian phd students' attitudes toward ai language processing tools in the context of english for academic purposes
-understanding teachers' perspectives on chatgpt-generated assignments in higher education
-university policies on generative ai in asia: promising practices, gaps, and future directions
-university teachers at the crossroads: unpacking their intentions toward chatgpt's instructional use
 unmasking academic cheating behavior in the artificial intelligence era: evidence from vietnamese undergraduates
 unpacking perceived risks and ai trust influences pre-service teachers' ai acceptance: a structural equation modeling-based multi-group analysis
-unveiling indonesian higher education students’ english academic writing misconduct in the era of technology & ai: comprehension vs practice
-unveiling the impact of chatgpt: investigating self-efficacy, anxiety and motivation on student performance in blended learning environments
-unveiling the potential: experts' perspectives on artificial intelligence integration in higher education
-upskilling teachers to use generative artificial intelligence: the tptp approach for sustainable teacher support and development
-use of artificial intelligence to grade student discussion boards: an exploratory study
-use of chatgpt at university as a tool for complex thinking: students' perceived usefulness
-use of chatgpt by the library and information science students at the university of delhi
-using artificial intelligence for academic writing in higher education: the perspectives of university students in ghana
-using artificial intelligence platforms to support student learning in physiology
-using chatgpt in teaching computer programming and studying its impact on students performance
-using machine learning to identify the most at-risk students in physics classes
-using supervised machine learning on large-scale online forums to classify course-related facebook messages in predicting learning achievement within the personal learning environment
-verifying student identity in oral assessments with deep speaker
-virtual team building in an intelligent collaborative learning environment
-voices of the future: exploring students' views on the use of genai in academic and professional pr writing
-what are new zealand primary teachers' beliefs and understandings of using chatgpt to support their own practice?
-what motivates academics in egypt toward generative ai tools? an integrated model of tam, sct, utaut2, perceived ethics, and academic integrity
-where does chatgpt fit into the framework for information literacy? the possibilities and problems of ai in library instruction
-where's the harm? screening student evaluations of teaching for offensive, threatening or distressing comments
 who will watch the watchmen? the ethico-political arrangements of algorithmic proctoring for academic integrity
 who wrote this? essay mills and assessment-considerations regarding contract cheating and ai in higher education
-widen the debate: what is the academic community's perception on chatgpt?
 ‘words are flowing out like endless rain into a paper cup’: chatgpt & law school assessments
-“enhancing learning potential: investigating marketing students’ behavioral intentions to adopt chatgpt”
