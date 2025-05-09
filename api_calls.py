@@ -39,14 +39,15 @@ def ris_filter(input_file):
 		except Exception as e:
 			print(f"Error on batch {i+1}: {e}")
 
-def analyze_pdf(pages, doc_id):
-    prompt = prompts.pdf_country_prompt(pages)
+def analyze_pdf(pages, doc_id, prompt_function):
+    prompt = prompt_function(pages)
     result = call_api(prompt)
+    result = result.strip().removeprefix("```json").removeprefix("```").removesuffix("```").strip()
     data = json.loads(result)
     data["ID"] = doc_id
     return data
 
-def process_all_pdfs(pdf_dir, output_path="output/results.json"):
+def process_all_pdfs(pdf_dir, prompt_function, output_path="output/results.json"):
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     pdf_files = glob.glob(os.path.join(pdf_dir, "*.pdf"))
     all_data = []
@@ -56,7 +57,7 @@ def process_all_pdfs(pdf_dir, output_path="output/results.json"):
         print(f"📘 Processing: {doc_id}")
         pages = dataManager.extract_pdf_pages(pdf_path)
         try:
-            data = analyze_pdf(pages, doc_id)
+            data = analyze_pdf(pages, doc_id, prompt_function)
             all_data.append(data)
 
             with open(output_path, 'w', encoding='utf-8') as f:
